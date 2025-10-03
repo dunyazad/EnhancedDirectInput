@@ -18,18 +18,18 @@ public class [UE project] : ModuleRules
     }
 
     public [UE project](ReadOnlyTargetRules Target) : base(Target)
-	  {
-		    PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
+	{
+	    PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		    PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput" });
+	    PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput" });
 
-		    PrivateDependencyModuleNames.AddRange(new string[] {  });
+	    PrivateDependencyModuleNames.AddRange(new string[] {  });
 
         // 아래 내용 추가
-		    PublicIncludePaths.Add(Path.Combine(ThirdPartyPath, "EnhancedDirectInput", "include"));
+	    PublicIncludePaths.Add(Path.Combine(ThirdPartyPath, "EnhancedDirectInput", "include"));
         PublicAdditionalLibraries.Add(Path.Combine(ThirdPartyPath, "EnhancedDirectInput", "lib", "EnhancedDirectInput.lib"));
         PublicDelayLoadDLLs.Add("EnhancedDirectInput.dll");
         RuntimeDependencies.Add(Path.Combine(ModuleDirectory, "../../Binaries/Win64/EnhancedDirectInput.dll"));
-	  }
+	}
 }
 ```
