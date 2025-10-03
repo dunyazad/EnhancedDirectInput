@@ -5,7 +5,7 @@ UE project Root에 ThirdParty 폴더 생성 -> EnhancedDirectInput 폴더 생성
 
 [UE project Root]/Source/[UE project]/[UE project].Build.cs 파일에 내용 추가
 
-'''
+```
 using UnrealBuildTool;
 using System.IO;
 
@@ -32,4 +32,4 @@ public class [UE project] : ModuleRules
         RuntimeDependencies.Add(Path.Combine(ModuleDirectory, "../../Binaries/Win64/EnhancedDirectInput.dll"));
 	  }
 }
-'''
+```
