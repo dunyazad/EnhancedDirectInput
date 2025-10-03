@@ -1,5 +1,5 @@
 UE project Root에 ThirdParty 폴더 생성 >> EnhancedDirectInput 폴더 생성 >> Include, lib 폴더 생성
->> include 폴더에 EnhancedDirectInput.h 파일 복사 >> lib 폴더에 EnhancedDirectInput.lib 파일 복사
+ >> include 폴더에 EnhancedDirectInput.h 파일 복사 >> lib 폴더에 EnhancedDirectInput.lib 파일 복사
 
 [UE project Root]/Binaries/Win64 폴더에 EnhancedDirectInput.dll 파일 복사
 
